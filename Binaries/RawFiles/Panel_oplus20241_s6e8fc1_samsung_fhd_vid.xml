@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PanelName>SAMSUNG AMOLED</PanelName>
+<PanelDescription>Samsung Single DSI Video Mode AMOLED Panel (1080x2400 24bpp)</PanelDescription>
+<Group id="Active Timing">
+ <HorizontalActive units="Dot Clocks">1080</HorizontalActive>
+ <HorizontalFrontPorch units="Dot Clocks">52</HorizontalFrontPorch>
+ <HorizontalBackPorch units="Dot Clocks">108</HorizontalBackPorch>
+ <HorizontalSyncPulse units="Dot Clocks">20</HorizontalSyncPulse>
+ <HorizontalSyncSkew units="Dot Clocks">0</HorizontalSyncSkew>
+ <HorizontalLeftBorder units="Dot Clocks">0</HorizontalLeftBorder>
+ <HorizontalRightBorder units="Dot Clocks">0</HorizontalRightBorder>
+ <VerticalActive units="Dot Clocks">2400</VerticalActive>
+ <VerticalFrontPorch units="Lines">21</VerticalFrontPorch>
+ <VerticalBackPorch units="Lines">9</VerticalBackPorch>
+ <VerticalSyncPulse units="Lines">2</VerticalSyncPulse>
+ <VerticalSyncSkew units="Lines">0</VerticalSyncSkew>
+ <VerticalTopBorder units="Lines">0</VerticalTopBorder>
+ <VerticalBottomBorder units="Lines">0</VerticalBottomBorder>
+ <InvertDataPolarity>False</InvertDataPolarity>
+ <InvertVsyncPolairty>False</InvertVsyncPolairty>
+ <InvertHsyncPolarity>False</InvertHsyncPolarity>
+ <BorderColor>0x0</BorderColor>
+</Group>
+<Group id="Display Interface">
+    <InterfaceType>8</InterfaceType>
+    <InterfaceColorFormat>3</InterfaceColorFormat>
+</Group>
+<Group id="DSI Interface">
+    <DSIChannelId>1</DSIChannelId>
+    <DSIVirtualId>0</DSIVirtualId>
+    <DSIColorFormat>36</DSIColorFormat>
+    <DSITrafficMode>2</DSITrafficMode>
+    <DSILanes>4</DSILanes>
+    <DSIPreTerm units='Bool'>True</DSIPreTerm>
+    <DSILowPowerModeInBLLPEOF>True</DSILowPowerModeInBLLPEOF>
+    <DSILowPowerModeInBLLP>True</DSILowPowerModeInBLLP>
+    <DSIRefreshRate>0x3D0000</DSIRefreshRate>
+    <DSIDynamicRefreshRates>0x3C4000 0x3CC000</DSIDynamicRefreshRates>
+    <DSICmdSwapInterface>False</DSICmdSwapInterface>
+    <DSICmdUsingTrigger>False</DSICmdUsingTrigger>
+ <DSIControllerMapping>
+  00
+ </DSIControllerMapping>
+</Group>
+<DSIInitSequence>
+ FF 05
+ 39 11
+ FF 14
+ 39 F0 5A 5A
+ 39 B0 01
+ 39 CD 01
+ 39 F0 A5 A5
+ 39 35 00
+ 39 FC 5A 5A
+ 39 B0 03
+ 39 ED 40 FF 08 87 A4 4A 73 E2 9F 00
+ 39 FC A5 A5
+ 39 F0 5A 5A
+ 39 B0 05
+ 39 B3 07
+ 39 F0 A5 A5
+ 39 F0 5A 5A
+ 39 B0 1E
+ 39 B3 05 05 05 05 05 05 05
+ 39 F0 A5 A5
+ 39 F0 5A 5A
+ 39 EA 48
+ 39 F0 A5 A5
+ 39 F0 5A 5A
+ 39 B0 3C
+ 39 B5 00
+ 39 B0 15
+ 39 B5 00 B4 10 E1 74 1B E1 FC 26 22 B8 36 43 B8 40 64 4C
+ 39 B0 2E
+ 39 B3 44 C0 B4 10 31 74 1F C2 B8 3B 80
+ 39 F0 A5 A5
+ 39 F0 5A 5A
+ 39 B0 01
+ 39 B3 7F
+ 39 F0 A5 A5
+ 39 53 20
+ 39 55 00
+ 39 F0 5A 5A
+ 39 80 92
+ 39 B1 00
+ 39 B0 2B B1
+ 39 B1 E8 00 04 02 FF 02 00 00 FF 14 FF DE FD 00 F0 FA EB 00 FF FF FF
+ 39 B0 55 B1
+ 39 B1 80
+ 39 F0 A5 A5
+ FF 64
+ 39 29
+</DSIInitSequence>
+<DSITermSequence>
+ 39 9F A5 A5
+ 05 28
+ FF 10
+ 05 10
+ 39 9F 5A 5A
+ 39 F0 5A 5A
+ 15 B0 05
+ 15 F4 01
+ 39 F0 A5 A5
+ FF 96
+</DSITermSequence>
+<Group id='Backlight Configuration'>
+ <BacklightType>3</BacklightType>
+ <BacklightBitWidth>10</BacklightBitWidth>
+ <BacklightDefault units='Percentage'>39</BacklightDefault>
+ <DisplayResetInfo>0 10000 10000 10000 0</DisplayResetInfo>
+</Group>

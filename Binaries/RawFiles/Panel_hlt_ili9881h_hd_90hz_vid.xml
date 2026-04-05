@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PanelName>ILI9881H_HLT_90HZ_Video</PanelName>
+<PanelDescription>ILI9881h video mode dsi hlt 90hz panel</PanelDescription>
+<Group id="Active Timing">
+ <HorizontalActive>720</HorizontalActive>
+ <HorizontalFrontPorch>40</HorizontalFrontPorch>
+ <HorizontalBackPorch>20</HorizontalBackPorch>
+ <HorizontalSyncPulse>8</HorizontalSyncPulse>
+ <HorizontalSyncSkew>0</HorizontalSyncSkew>
+ <HorizontalLeftBorder>0</HorizontalLeftBorder>
+ <HorizontalRightBorder>0</HorizontalRightBorder>
+ <VerticalActive>1600</VerticalActive>
+ <VerticalFrontPorch>340</VerticalFrontPorch>
+ <VerticalBackPorch>20</VerticalBackPorch>
+ <VerticalSyncPulse>8</VerticalSyncPulse>
+ <VerticalSyncSkew>0</VerticalSyncSkew>
+ <VerticalTopBorder>0</VerticalTopBorder>
+ <VerticalBottomBorder>0</VerticalBottomBorder>
+</Group>
+<Group id="Display Interface">
+ <InterfaceType>8</InterfaceType>
+ <InterfaceColorFormat>3</InterfaceColorFormat>
+</Group>
+<Group id="DSI Interface">
+ <DSIChannelId>1</DSIChannelId>
+ <DSIVirtualId>0</DSIVirtualId>
+ <DSIColorFormat>36</DSIColorFormat>
+ <DSITrafficMode>1</DSITrafficMode>
+ <DSILanes>4</DSILanes>
+ <DSILP11AtInit>True</DSILP11AtInit>
+ <DSILowPowerModeInBLLPEOF>True</DSILowPowerModeInBLLPEOF>
+ <DSILowPowerModeInBLLP>True</DSILowPowerModeInBLLP>
+ <DSIRefreshRate>0x5A0000</DSIRefreshRate>
+ <DSIDynamicRefreshRates>0x590000 0x5A0000</DSIDynamicRefreshRates>
+ <DSICmdSwapInterface>False</DSICmdSwapInterface>
+ <DSICmdUsingTrigger>False</DSICmdUsingTrigger>
+ <DSIControllerMapping>
+  00
+ </DSIControllerMapping>
+</Group>
+<DSIInitSequence>
+ 39 FF 98 81 06
+ 15 06 C4
+ 39 FF 98 81 03
+ 15 83 20
+ 15 84 00
+ 15 90 11
+ 15 91 F4
+ 15 92 14
+ 15 93 15
+ 15 94 0B
+ 15 95 0C
+ 15 96 0D
+ 15 97 0D
+ 15 98 0E
+ 15 99 0E
+ 15 9A 0E
+ 15 9B 10
+ 15 9C 11
+ 15 9D 12
+ 15 9E 04
+ 15 9F 06
+ 15 A0 08
+ 15 A1 0A
+ 15 A2 0C
+ 15 A3 0C
+ 15 A4 0C
+ 15 A5 0E
+ 15 A6 90
+ 15 A7 91
+ 15 AF AF
+ 15 AE B9
+ 15 AD EF
+ 15 89 B0
+ 15 AC FA
+ 39 FF 98 81 00
+ 15 53 24
+ 15 55 01
+ 39 FF 98 81 00
+ 15 35 00
+ 05 11 00
+ FF 3E
+ 39 FF 98 81 06
+ 15 58 C8
+ 39 FF 98 81 00
+ 05 29 00
+ FF 02
+</DSIInitSequence>
+<DSITermSequence>
+ 39 FF 98 81 00
+ 05 28
+ FF 14
+ 05 10
+ FF 78
+</DSITermSequence>
+<Group id='Backlight Configuration'>
+ <BacklightType>3</BacklightType>
+ <BacklightPmicControlType>0</BacklightPmicControlType>
+ <BacklightDefault>1024</BacklightDefault>
+ <BacklightBitWidth>12</BacklightBitWidth>
+ <DisplayResetInfo>0 2000 1000 10000 0</DisplayResetInfo>
+</Group>
