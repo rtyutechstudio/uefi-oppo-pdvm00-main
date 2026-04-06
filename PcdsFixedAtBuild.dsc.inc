@@ -1,16 +1,16 @@
 [PcdsFixedAtBuild.common]
-gAndromedaPkgTokenSpaceGuid.PcdMipiFrameBufferWidth|1080
-gAndromedaPkgTokenSpaceGuid.PcdMipiFrameBufferHeight|2400
+gAndromedaPkgTokenSpaceGuid.PcdMipiFrameBufferWidth|720
+gAndromedaPkgTokenSpaceGuid.PcdMipiFrameBufferHeight|1600
 
 # Smbios Info
-gAndromedaPkgTokenSpaceGuid.PcdSmbiosSystemBrand|"Samsung"
-gAndromedaPkgTokenSpaceGuid.PcdSmbiosSystemModel|"Galaxy A52s 5G"
-gAndromedaPkgTokenSpaceGuid.PcdSmbiosSystemRetailModel|"a52sxq"
+gAndromedaPkgTokenSpaceGuid.PcdSmbiosSystemBrand|"OPPO"
+gAndromedaPkgTokenSpaceGuid.PcdSmbiosSystemModel|"A32"
+gAndromedaPkgTokenSpaceGuid.PcdSmbiosSystemRetailModel|"PDVM00"
 gAndromedaPkgTokenSpaceGuid.PcdSmbiosSystemRetailSku|"SM-A528B/N"
-gAndromedaPkgTokenSpaceGuid.PcdSmbiosProcessorRetailModel|"SM7325"
-gAndromedaPkgTokenSpaceGuid.PcdSmbiosProcessorModel|"Snapdragon (TM) 778G 5G @ 2.40 GHz"
+gAndromedaPkgTokenSpaceGuid.PcdSmbiosProcessorRetailModel|"SM4250"
+gAndromedaPkgTokenSpaceGuid.PcdSmbiosProcessorModel|"Snapdragon (TM) 460 Mobile Platform @ 1.80 GHz"
 
-gAndromedaPkgTokenSpaceGuid.PcdABLProduct|"a52sxq"
+gAndromedaPkgTokenSpaceGuid.PcdABLProduct|"A32"
 
 # Display Caller
 #gAndromedaPkgTokenSpaceGuid.PcdDisplayCallerExitDisableDisplay|FALSE
